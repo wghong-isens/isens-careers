@@ -133,6 +133,15 @@ export default function HeroSection() {
               className="inline-block bg-[#FF8C00] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/30"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
+              지원하기
+            </a>
+            <a
+              href="https://isens.career.greetinghr.com/ko/intro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border-2 border-white text-white px-8 py-4 rounded font-semibold text-base hover:bg-white hover:text-[#FF8C00] transition-all"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
+            >
               채용 포지션 보기
             </a>
             <button
