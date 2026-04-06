@@ -7,7 +7,7 @@
 import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-We2iyVk4SdeYarcWYUL53c.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-warm-BkxTAWq9Vf7YxSVMxnwAFZ.webp";
 
 export default function HeroSection() {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -32,10 +32,10 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       />
-      {/* Bright overlay with orange accent */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-[#FFE8D1]/20 to-[#FF8C00]/20" />
-      {/* Light brightness boost */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/20" />
+      {/* Bright overlay with orange accent - Enhanced brightness */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-[#FFE8D1]/35 to-[#FF8C00]/25" />
+      {/* Light brightness boost - Increased */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-white/20 to-white/30" />
 
       {/* Diagonal bottom cut */}
       <div
