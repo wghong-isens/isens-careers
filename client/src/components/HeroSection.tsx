@@ -7,7 +7,7 @@
 import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-warm-BkxTAWq9Vf7YxSVMxnwAFZ.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg_ae847aae.jpg";
 
 export default function HeroSection() {
   const titleRef = useRef<HTMLDivElement>(null);
