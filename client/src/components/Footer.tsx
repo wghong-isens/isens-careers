@@ -2,7 +2,6 @@
  * Footer — 아이센스에프앤비
  * Background: Dark slate (#0F172A)
  */
-import { toast } from "sonner";
 
 export default function Footer() {
   const scrollTo = (id: string) => {
@@ -83,13 +82,13 @@ export default function Footer() {
               <br />
               인사총무부로 연락해 주세요.
             </p>
-            <button
-              onClick={() => toast.info("채용 문의 페이지는 준비 중입니다.")}
-              className="bg-[#FF8C00] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
+            <a
+              href="mailto:hr@isens.co.kr"
+              className="inline-block bg-[#FF8C00] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               채용 문의하기
-            </button>
+            </a>
           </div>
         </div>
 
@@ -99,7 +98,7 @@ export default function Footer() {
             className="text-xs text-[#475569]"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
-            © 2024 (주)아이센스에프앤비. All rights reserved.
+            © 2026 (주)아이센스에프앤비. All rights reserved.
           </p>
           <p
             className="text-xs text-[#475569]"

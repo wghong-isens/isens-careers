@@ -6,7 +6,7 @@
 import { useState } from "react";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { ChevronRight, MapPin, Clock } from "lucide-react";
-import { toast } from "sonner";
+
 
 const positions = [
   {
@@ -232,8 +232,8 @@ function PositionCard({
       </div>
 
       {/* Apply Button */}
-      <button
-        onClick={() => toast.info("채용 공고 준비 중입니다. 곧 공개될 예정입니다!")}
+      <a
+        href={`mailto:hr@isens.co.kr?subject=${encodeURIComponent(`[지원] ${pos.dept} - ${pos.role}`)}`}
         className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all hover:gap-3"
         style={{
           backgroundColor: `${color}10`,
@@ -243,7 +243,7 @@ function PositionCard({
       >
         지원하기
         <ChevronRight size={16} />
-      </button>
+      </a>
     </div>
   );
 }
