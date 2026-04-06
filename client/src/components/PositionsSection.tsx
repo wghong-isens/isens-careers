@@ -233,7 +233,7 @@ function PositionCard({
 
       {/* Apply Button */}
       <a
-        href={`mailto:hr@isens.co.kr?subject=${encodeURIComponent(`[지원] ${pos.dept} - ${pos.role}`)}`}
+        href={`mailto:isenshr@isens.camp?subject=${encodeURIComponent(`[지원] ${pos.dept} - ${pos.role}`)}`}
         className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-semibold transition-all hover:gap-3"
         style={{
           backgroundColor: `${color}10`,

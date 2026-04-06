@@ -83,7 +83,7 @@ export default function Footer() {
               인사총무부로 연락해 주세요.
             </p>
             <a
-              href="mailto:hr@isens.co.kr"
+              href="mailto:isenshr@isens.camp"
               className="inline-block bg-[#FF8C00] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
