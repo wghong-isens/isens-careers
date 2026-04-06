@@ -59,7 +59,7 @@ export default function ValuesSection() {
   return (
     <section
       id="values"
-      className="py-24 bg-[#1E293B] relative"
+      className="py-24 bg-gradient-to-b from-[#FFF9F0] to-[#FFE8CC] relative"
       style={{
         clipPath: "polygon(0 4%, 100% 0, 100% 96%, 0 100%)",
         marginTop: "-3rem",
@@ -97,15 +97,15 @@ export default function ValuesSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="section-label text-[#FFD699]">Core Values</span>
+          <span className="section-label text-[#FF8C00]">Core Values</span>
           <h2
-            className="text-4xl lg:text-5xl font-black text-white mt-4 mb-6"
+            className="text-4xl lg:text-5xl font-black text-[#1E293B] mt-4 mb-6"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
             아이센스 그룹의 4대 핵심 가치
           </h2>
           <p
-            className="text-[#94A3B8] text-lg max-w-3xl mx-auto leading-relaxed"
+            className="text-[#6B7280] text-lg max-w-3xl mx-auto leading-relaxed"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
           >
             선한 인재들이 끊임없이 배우고 성장하여, 올바른 방식으로 탁월한 성과를 내는 시스템을 만듭니다.
@@ -124,13 +124,13 @@ export default function ValuesSection() {
 
         {/* Bottom Message */}
         <div
-          className={`mt-16 pt-12 border-t border-white/10 text-center transition-all duration-700 ${
+          className={`mt-16 pt-12 border-t border-[#FFE8CC] text-center transition-all duration-700 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
           style={{ transitionDelay: "0.4s" }}
         >
           <p
-            className="text-white/80 text-base leading-relaxed max-w-2xl mx-auto"
+            className="text-[#6B7280] text-base leading-relaxed max-w-2xl mx-auto"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
           >
             이 가치들은 서로 유기적으로 연결되어, 아이센스의 큰 그림을 완성합니다.
@@ -155,7 +155,7 @@ function ValueCard({
   return (
     <div
       ref={ref}
-      className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8 border-l-4 border-l-[#FF8C00] hover:bg-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 ${
+      className={`bg-white border border-[#FFE8CC] rounded-xl p-8 border-l-4 border-l-[#FF8C00] hover:bg-[#FFFBF5] hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/20 transition-all duration-300 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{ transitionDelay: `${index * 0.1}s` }}
@@ -166,7 +166,7 @@ function ValueCard({
         </div>
         <div>
           <h3
-            className="text-xl font-black text-white mb-1"
+            className="text-xl font-black text-[#1E293B] mb-1"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
             {value.title}
@@ -180,8 +180,8 @@ function ValueCard({
         </div>
       </div>
 
-      <p
-        className="text-sm text-[#CBD5E1] leading-relaxed mb-5"
+        <p
+          className="text-sm text-[#6B7280] leading-relaxed mb-5"
         style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
       >
         {value.description}
@@ -198,7 +198,7 @@ function ValueCard({
           {value.practices.map((practice, idx) => (
             <li
               key={idx}
-              className="text-sm text-[#94A3B8] leading-relaxed flex gap-2"
+              className="text-sm text-[#6B7280] leading-relaxed flex gap-2"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
             >
               <span className="text-[#FF8C00] font-bold flex-shrink-0">•</span>

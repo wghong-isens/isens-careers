@@ -5,7 +5,7 @@
  */
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
-const CULTURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/culture-bg-warm-A7xutKLWsFY7cCerA2Pmfm.webp";
+const CULTURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/about-company-image-eEu8TVzYG4pRpX943ho7C8.webp";
 
 export default function AboutSection() {
   const { ref: sectionRef, visible } = useScrollFadeIn();
