@@ -49,27 +49,11 @@ export default function Navbar() {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 bg-[#FF8C00] rounded flex items-center justify-center">
-              <span className="text-white font-black text-sm font-['DM_Sans']">i</span>
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span
-                className={`font-black text-sm tracking-tight transition-colors ${
-                  scrolled ? "text-[#1E293B]" : "text-white"
-                }`}
-                style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
-              >
-                아이센스에프앤비
-              </span>
-              <span
-                className={`text-[10px] font-medium tracking-widest uppercase transition-colors ${
-                  scrolled ? "text-[#FF8C00]" : "text-blue-200"
-                }`}
-                style={{ fontFamily: "'DM Sans', sans-serif" }}
-              >
-                i-Sens F&B Careers
-              </span>
-            </div>
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/로고_9f3d91e7.png"
+              alt="아이센스 로고"
+              className="h-10 w-auto"
+            />
           </button>
 
           {/* Desktop Nav */}
