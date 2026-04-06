@@ -47,12 +47,12 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-0 group hover:opacity-80 transition-opacity"
           >
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/로고_9f3d91e7.png"
               alt="아이센스 로고"
-              className="h-10 w-auto"
+              className="h-14 lg:h-16 w-auto"
             />
           </button>
 
