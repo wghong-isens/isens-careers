@@ -32,10 +32,10 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       />
-      {/* Subtle overlay for clarity */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/15 via-[#FFE8D1]/10 to-[#FF8C00]/5" />
-      {/* Minimal brightness adjustment */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-white/5" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/30 to-black/25" />
+      {/* Additional dark gradient from top */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-transparent to-black/20" />
 
       {/* Diagonal bottom cut */}
       <div
@@ -61,8 +61,8 @@ export default function HeroSection() {
           >
             <div className="w-8 h-px bg-[#FFB84D]" />
             <span
-              className="text-[#FFD699] text-xs font-bold tracking-[0.2em] uppercase"
-              style={{ fontFamily: "'DM Sans', sans-serif" }}
+              className="text-white text-xs font-bold tracking-[0.2em] uppercase drop-shadow-md"
+              style={{ fontFamily: "'DM Sans', sans-serif", textShadow: "0 2px 6px rgba(0,0,0,0.4)" }}
             >
               i-Sens F&B Careers
             </span>
@@ -75,8 +75,8 @@ export default function HeroSection() {
             style={{ transitionDelay: "0.2s" }}
           >
             <h1
-              className="text-5xl lg:text-7xl font-black text-[#1E293B] leading-[1.05] mb-6"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
+              className="text-5xl lg:text-7xl font-black text-white leading-[1.05] mb-6 drop-shadow-lg"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", textShadow: "0 4px 12px rgba(0,0,0,0.5)" }}
             >
               AI 시대를 이끌
               <br />
@@ -98,16 +98,16 @@ export default function HeroSection() {
             }}
           >
             <p
-              className="text-lg lg:text-xl text-[#374151] mb-4 leading-relaxed"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
+              className="text-lg lg:text-xl text-white mb-4 leading-relaxed drop-shadow-md"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400, textShadow: "0 2px 8px rgba(0,0,0,0.4)" }}
             >
               홍익인간(弘益人間)의 정신으로
               <br />
               대한민국 1등 가맹관리 회사를 함께 만들어 갑니다.
             </p>
             <p
-              className="text-base text-[#6B7280]"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 300 }}
+              className="text-base text-white/90 drop-shadow-md"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 300, textShadow: "0 2px 6px rgba(0,0,0,0.4)" }}
             >
               (주)아이센스에프앤비 — 직원의 성공과 행복을 실현하는 최고의 플랫폼
             </p>
