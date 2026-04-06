@@ -127,7 +127,7 @@ export default function HeroSection() {
             }}
           >
             <a
-              href="https://isens.career.greetinghr.com/ko/intro#95909a87-3973-41a8-86a4-2bb4ea996639"
+              href="https://isens.career.greetinghr.com/ko/intro"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#FF8C00] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/30"
