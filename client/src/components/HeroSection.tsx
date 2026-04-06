@@ -101,15 +101,15 @@ export default function HeroSection() {
               className="text-2xl lg:text-3xl text-white mb-4 leading-relaxed drop-shadow-md font-semibold"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 500, textShadow: "0 3px 10px rgba(0,0,0,0.5)" }}
             >
-              홍ik인간(弘益人間)의 정신으로
+              홍익인간(弘益人間)의 정신으로
               <br />
-              대한민국 1등 가맩관리 회사를 함께 만들어 갑니다.
+              대한민국 1등 가맹 프랜차이즈 회사를 함께 만들어 갑니다.
             </p>
             <p
               className="text-xl text-white/90 drop-shadow-md font-medium"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400, textShadow: "0 3px 8px rgba(0,0,0,0.5)" }}
             >
-              (주)아이센스에단비 — 직원의 성공과 행복을 실현하는 최고의 플래폰
+              (주)아이센스에프앤비 — 직원의 성공과 행복을 실현하는 최고의 플랫폼
             </p>
           </div>
 
@@ -142,7 +142,7 @@ export default function HeroSection() {
               className="inline-block border-2 border-white text-white px-10 py-5 rounded font-semibold text-lg hover:bg-white hover:text-[#FF8C00] transition-all"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
-              채용 포지셔 보기
+              채용 포지션 보기
             </a>
             <button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
@@ -169,7 +169,7 @@ export default function HeroSection() {
             {[
               { num: "9+", label: "채용 부서" },
               { num: "AI", label: "전사 도입" },
-              { num: "1등", label: "가맩관리 목표" },
+              { num: "1등", label: "가맹 프랜차이즈 목표" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">
                 <span
