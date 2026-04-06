@@ -126,13 +126,15 @@ export default function HeroSection() {
               }
             }}
           >
-            <button
-              onClick={() => document.getElementById("positions")?.scrollIntoView({ behavior: "smooth" })}
-              className="bg-[#FF8C00] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/30"
+            <a
+              href="https://isens.career.greetinghr.com/ko/intro#95909a87-3973-41a8-86a4-2bb4ea996639"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#FF8C00] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/30"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               채용 포지션 보기
-            </button>
+            </a>
             <button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
               className="border-2 border-[#FF8C00] text-[#FF8C00] px-8 py-4 rounded font-semibold text-base hover:bg-[#FF8C00] hover:text-white transition-all"
