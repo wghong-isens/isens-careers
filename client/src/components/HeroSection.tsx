@@ -7,7 +7,7 @@
 import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-daytime-bbGSPgu45yz3x5rXNmG7Jd.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-asian-team-33NiLm5ndUmFx2A7ix4MFS.webp";
 
 export default function HeroSection() {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -59,9 +59,9 @@ export default function HeroSection() {
               }
             }}
           >
-            <div className="w-8 h-px bg-[#FFB84D]" />
+            <div className="w-12 h-1 bg-[#FFB84D]" />
             <span
-              className="text-white text-xs font-bold tracking-[0.2em] uppercase drop-shadow-md"
+              className="text-white text-sm font-bold tracking-[0.2em] uppercase drop-shadow-md"
               style={{ fontFamily: "'DM Sans', sans-serif", textShadow: "0 2px 6px rgba(0,0,0,0.4)" }}
             >
               i-Sens F&B Careers
