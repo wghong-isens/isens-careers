@@ -1,7 +1,7 @@
 /**
  * Navbar Component — Kinetic Manifesto Design System
  * Style: Swiss Typography + Motion Design
- * Colors: White bg → Blue primary (#2563EB), Navy text (#1E293B)
+ * Colors: White bg → Blue primary (#FF8C00), Navy text (#1E293B)
  * Behavior: Sticky with scroll-aware background transition
  */
 import { useState, useEffect } from "react";
@@ -49,7 +49,7 @@ export default function Navbar() {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 bg-[#2563EB] rounded flex items-center justify-center">
+            <div className="w-8 h-8 bg-[#FF8C00] rounded flex items-center justify-center">
               <span className="text-white font-black text-sm font-['DM_Sans']">i</span>
             </div>
             <div className="flex flex-col leading-tight">
@@ -63,7 +63,7 @@ export default function Navbar() {
               </span>
               <span
                 className={`text-[10px] font-medium tracking-widest uppercase transition-colors ${
-                  scrolled ? "text-[#2563EB]" : "text-blue-200"
+                  scrolled ? "text-[#FF8C00]" : "text-blue-200"
                 }`}
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
@@ -78,7 +78,7 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className={`text-sm font-medium transition-colors hover:text-[#2563EB] ${
+                className={`text-sm font-medium transition-colors hover:text-[#FF8C00] ${
                   scrolled ? "text-[#374151]" : "text-white/90"
                 }`}
                 style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -92,7 +92,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <button
               onClick={() => scrollTo("positions")}
-              className="bg-[#2563EB] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#1D4ED8] transition-colors"
+              className="bg-[#FF8C00] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               지금 지원하기
@@ -119,7 +119,7 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className="text-left px-4 py-3 text-sm font-medium text-[#374151] hover:text-[#2563EB] hover:bg-blue-50 rounded transition-colors"
+                className="text-left px-4 py-3 text-sm font-medium text-[#374151] hover:text-[#FF8C00] hover:bg-blue-50 rounded transition-colors"
                 style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
               >
                 {link.label}
@@ -128,7 +128,7 @@ export default function Navbar() {
             <div className="pt-2 px-4">
               <button
                 onClick={() => scrollTo("positions")}
-                className="w-full bg-[#2563EB] text-white px-5 py-3 rounded text-sm font-semibold hover:bg-[#1D4ED8] transition-colors"
+                className="w-full bg-[#FF8C00] text-white px-5 py-3 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
                 style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
               >
                 지금 지원하기

@@ -59,9 +59,9 @@ export default function HeroSection() {
               }
             }}
           >
-            <div className="w-8 h-px bg-[#3B82F6]" />
+            <div className="w-8 h-px bg-[#FFB84D]" />
             <span
-              className="text-[#93C5FD] text-xs font-bold tracking-[0.2em] uppercase"
+              className="text-[#FFD699] text-xs font-bold tracking-[0.2em] uppercase"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               i-Sens F&B Careers
@@ -80,7 +80,7 @@ export default function HeroSection() {
             >
               AI 시대를 이끌
               <br />
-              <span className="text-[#3B82F6]">인재</span>를 찾습니다
+              <span className="text-[#FFB84D]">인재</span>를 찾습니다
             </h1>
           </div>
 
@@ -128,7 +128,7 @@ export default function HeroSection() {
           >
             <button
               onClick={() => document.getElementById("positions")?.scrollIntoView({ behavior: "smooth" })}
-              className="bg-[#2563EB] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#1D4ED8] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/30"
+              className="bg-[#FF8C00] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/30"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               채용 포지션 보기

@@ -11,49 +11,49 @@ const benefits = [
     icon: Clock,
     title: "업무 2시간, 학습 6시간",
     desc: "하루 8시간 중 6시간을 학습에 투자합니다. 성장을 위한 시간을 회사가 보장합니다.",
-    color: "#2563EB",
+    color: "#FF8C00",
   },
   {
     icon: Bot,
     title: "AI 도구 전사 지원",
     desc: "구글 제미나이 등 최신 AI 도구를 전 직원에게 지원합니다. AI와 함께 일하는 환경을 만듭니다.",
-    color: "#1D4ED8",
+    color: "#E67E00",
   },
   {
     icon: TrendingUp,
     title: "공정한 성과 보상",
     desc: "KPI/OKR 기반의 투명한 성과 관리와 역할별 급여 구간으로 공정한 보상 체계를 운영합니다.",
-    color: "#2563EB",
+    color: "#FF8C00",
   },
   {
     icon: Award,
     title: "브랜드 이익 배당",
     desc: "사내 브랜드 이익의 최소 10%를 구성원에게 배당하는 이익 공유 문화를 지향합니다.",
-    color: "#1D4ED8",
+    color: "#E67E00",
   },
   {
     icon: BookOpen,
     title: "교재화 & 리턴 티칭",
     desc: "지식을 매뉴얼·체크리스트·FAQ로 교재화하고, 배운 것을 동료에게 가르치는 문화입니다.",
-    color: "#2563EB",
+    color: "#FF8C00",
   },
   {
     icon: Target,
     title: "30-60-90일 온보딩",
     desc: "신입사원이 빠르게 적응하고 성과를 낼 수 있도록 체계적인 3개월 적응 로드맵을 제공합니다.",
-    color: "#1D4ED8",
+    color: "#E67E00",
   },
   {
     icon: Users,
     title: "자가 경영 문화",
     desc: "전 직원이 CEO 마인드로 일합니다. 주인의식을 갖고 스스로 목표를 설정하고 실행합니다.",
-    color: "#2563EB",
+    color: "#FF8C00",
   },
   {
     icon: Smile,
     title: "성장 중심 피드백",
     desc: "정기적인 1:1 체크인과 건설적인 피드백 문화로 개인의 성장을 지속적으로 지원합니다.",
-    color: "#1D4ED8",
+    color: "#E67E00",
   },
 ];
 
@@ -130,7 +130,7 @@ function BenefitCard({
   return (
     <div
       ref={ref}
-      className={`p-5 rounded-xl border border-gray-100 hover:border-[#2563EB]/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${
+      className={`p-5 rounded-xl border border-gray-100 hover:border-[#FF8C00]/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{ transitionDelay: `${(index % 4) * 0.1}s` }}
@@ -168,7 +168,7 @@ function OnboardingRoadmap() {
       }`}
     >
       <div className="flex items-center gap-3 mb-8">
-        <div className="w-1 h-6 bg-[#2563EB] rounded-full" />
+        <div className="w-1 h-6 bg-[#FF8C00] rounded-full" />
         <h3
           className="text-xl font-bold text-[#1E293B]"
           style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -182,12 +182,12 @@ function OnboardingRoadmap() {
           <div key={phase.period} className="relative">
             {/* Connector */}
             {i < onboarding.length - 1 && (
-              <div className="hidden md:block absolute top-6 left-full w-full h-px bg-[#2563EB]/30 z-0" />
+              <div className="hidden md:block absolute top-6 left-full w-full h-px bg-[#FF8C00]/30 z-0" />
             )}
 
-            <div className="relative z-10 bg-white rounded-xl p-5 border border-gray-100 border-t-4 border-t-[#2563EB]">
+            <div className="relative z-10 bg-white rounded-xl p-5 border border-gray-100 border-t-4 border-t-[#FF8C00]">
               <div
-                className="text-xs font-bold text-[#2563EB] tracking-widest uppercase mb-2"
+                className="text-xs font-bold text-[#FF8C00] tracking-widest uppercase mb-2"
                 style={{ fontFamily: "'DM Sans', sans-serif" }}
               >
                 {phase.period}
@@ -205,7 +205,7 @@ function OnboardingRoadmap() {
                     className="flex items-start gap-2 text-xs text-[#6B7280]"
                     style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-[#2563EB] mt-1.5 flex-shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#FF8C00] mt-1.5 flex-shrink-0" />
                     {item}
                   </li>
                 ))}

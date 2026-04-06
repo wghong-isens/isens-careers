@@ -1,41 +1,41 @@
 /**
  * ValuesSection — 핵심 가치
  * Background: Dark navy (#1E293B) — diagonal clip
- * Cards: Blue border left, stagger animation
+ * Cards: Orange border left, stagger animation
  */
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
-import { Users, Shield, Zap, BookOpen, Handshake } from "lucide-react";
+import { Users, Smile, Zap, BookOpen, Scale } from "lucide-react";
 
 const values = [
   {
     icon: Users,
-    title: "고객 (Customer)",
-    en: "Customer First",
-    desc: "고객 가치를 최우선으로 생각하고, 고객의 성공이 곧 우리의 성공입니다.",
+    title: "사람 중심",
+    en: "People First",
+    desc: "모든 직원이 스스로 책임과 권한을 가지고 주도적으로 경영하는 '자가 경영'을 추구합니다.",
   },
   {
-    icon: Shield,
-    title: "윤리 (Ethics)",
-    en: "Integrity",
-    desc: "정도경영과 기업윤리를 준수하며, 신뢰를 바탕으로 모든 관계를 이어갑니다.",
+    icon: Smile,
+    title: "고객 감동",
+    en: "Customer Delight",
+    desc: "최종 고객의 편익을 최우선으로 생각하고, 아낌없이 주는 설계를 통해 최고의 경험을 제공합니다.",
   },
   {
     icon: Zap,
-    title: "참여와 도전",
-    en: "Participation & Challenge",
-    desc: "주인의식을 갖고 창조적 도전을 통해 새로운 가치를 만들어 냅니다.",
+    title: "혁신과 도전",
+    en: "Innovation & Challenge",
+    desc: "AI, 푸드테크, 로봇 기술을 적극 도입하고, '벤치마킹+1' 전략으로 새로운 가치를 창조합니다.",
   },
   {
     icon: BookOpen,
-    title: "학습과 성장",
-    en: "Learning & Growth",
-    desc: "끊임없는 학습과 역량 개발로 개인과 조직이 함께 성장합니다.",
+    title: "학습 문화",
+    en: "Learning Culture",
+    desc: "'학습 후 시험', '릴레이 강의' 등을 통해 지식을 체화하고 전 직원이 함께 성장합니다.",
   },
   {
-    icon: Handshake,
-    title: "신뢰와 협업",
-    en: "Trust & Collaboration",
-    desc: "원칙과 협업을 통해 신뢰를 구축하고, 함께 더 큰 성과를 만듭니다.",
+    icon: Scale,
+    title: "정도 경영",
+    en: "Ethical Management",
+    desc: "원칙과 윤리를 준수하고, 동료 및 파트너사와의 신뢰를 구축하여 함께 성장합니다.",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function ValuesSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="section-label text-[#93C5FD]">Core Values</span>
+          <span className="section-label text-[#FFD699]">Core Values</span>
           <h2
             className="text-4xl lg:text-5xl font-black text-white mt-3 mb-4"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -94,7 +94,7 @@ export default function ValuesSection() {
             className="text-[#94A3B8] text-lg max-w-2xl mx-auto"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
           >
-            아이센스에프앤비의 모든 구성원이 공유하는 5가지 핵심 가치입니다.
+            아이센스는 사람 중심, 고객 감동, 혁신과 도전, 정도 경영을 추구합니다.
           </p>
         </div>
 
@@ -126,18 +126,18 @@ function ValueCard({
   return (
     <div
       ref={ref}
-      className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 border-l-4 border-l-[#2563EB] hover:bg-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 ${
+      className={`bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 border-l-4 border-l-[#FF8C00] hover:bg-white/10 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{ transitionDelay: `${index * 0.1}s` }}
     >
       <div className="flex items-start gap-4">
-        <div className="w-12 h-12 bg-[#2563EB]/20 rounded-lg flex items-center justify-center flex-shrink-0">
-          <Icon size={22} className="text-[#3B82F6]" />
+        <div className="w-12 h-12 bg-[#FF8C00]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+          <Icon size={22} className="text-[#FFB84D]" />
         </div>
         <div>
           <div
-            className="text-[10px] font-bold text-[#3B82F6] tracking-widest uppercase mb-1"
+            className="text-[10px] font-bold text-[#FFB84D] tracking-widest uppercase mb-1"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             {value.en}

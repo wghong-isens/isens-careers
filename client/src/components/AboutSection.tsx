@@ -30,29 +30,27 @@ export default function AboutSection() {
               <br />
               가맹관리 회사
             </h2>
-            <div className="w-12 h-1 bg-[#2563EB] mb-8" />
+            <div className="w-12 h-1 bg-[#FF8C00] mb-8" />
 
             <p
               className="text-lg text-[#374151] leading-relaxed mb-6"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
             >
-              (주)아이센스에프앤비는 PC방, 벌툰 등 프랜차이즈 가맹점 관리 분야에서
-              대한민국 최고를 목표로 하는 기업입니다.
+              아이센스는 '사람을 위한 선(善)이 장기적 성과를 만든다'는 믿음 아래, 직원과 가맹점주의 성장을 최우선으로 지원하는 혁신적인 프랜차이즈 플랫폼 기업입니다.
             </p>
             <p
               className="text-base text-[#6B7280] leading-relaxed mb-8"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
             >
-              홍익인간(弘益人間) — '널리 세상을 이롭게 한다'는 정신을 바탕으로,
-              직원의 성공과 행복을 실현하는 최고의 플랫폼이 되겠습니다.
-              AI 시대에 맞는 혁신적인 인재와 함께 새로운 미래를 만들어 갑니다.
+              우리는 AI 기술과 독창적인 브랜딩을 통해 PC방, 만화카페 문화를 선도하며,
+              모든 이해관계자와 함께 성공하는 '홍익인간'의 사명을 실현합니다.
             </p>
 
             {/* Mission & Vision Cards */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#EFF6FF] rounded-lg p-5 border-l-4 border-[#2563EB]">
+              <div className="bg-[#EFF6FF] rounded-lg p-5 border-l-4 border-[#FF8C00]">
                 <div
-                  className="text-xs font-bold text-[#2563EB] tracking-widest uppercase mb-2"
+                  className="text-xs font-bold text-[#FF8C00] tracking-widest uppercase mb-2"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   Mission
@@ -61,13 +59,13 @@ export default function AboutSection() {
                   className="text-sm font-semibold text-[#1E293B] leading-snug"
                   style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
                 >
-                  홍익인간 정신으로
-                  세상을 이롭게
+                  널리 세상을
+                  이롭게 한다
                 </p>
               </div>
-              <div className="bg-[#1E293B] rounded-lg p-5 border-l-4 border-[#3B82F6]">
+              <div className="bg-[#1E293B] rounded-lg p-5 border-l-4 border-[#FFB84D]">
                 <div
-                  className="text-xs font-bold text-[#3B82F6] tracking-widest uppercase mb-2"
+                  className="text-xs font-bold text-[#FFB84D] tracking-widest uppercase mb-2"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   Vision
@@ -109,8 +107,8 @@ export default function AboutSection() {
               </div>
             </div>
             {/* Decorative element */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#2563EB]/10 rounded-full blur-2xl" />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#3B82F6]/10 rounded-full blur-2xl" />
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#FF8C00]/10 rounded-full blur-2xl" />
+            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#FFB84D]/10 rounded-full blur-2xl" />
           </div>
         </div>
       </div>

@@ -42,9 +42,9 @@
   --color-sidebar-ring: var(--sidebar-ring);
   
   /* Custom brand colors */
-  --color-isens-blue: #2563EB;
-  --color-isens-blue-dark: #1D4ED8;
-  --color-isens-blue-light: #3B82F6;
+  --color-isens-orange: #FF8C00;
+  --color-isens-orange-dark: #E67E00;
+  --color-isens-orange-light: #FFB84D;
   --color-isens-navy: #1E293B;
   --color-isens-slate: #0F172A;
 }
@@ -147,7 +147,7 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #2563EB;
+    color: #FF8C00;
   }
   
   .diagonal-section {
@@ -164,15 +164,15 @@
     padding-bottom: 6rem;
   }
   
-  .blue-border-card {
-    border-left: 4px solid #2563EB;
+  .orange-border-card {
+    border-left: 4px solid #FF8C00;
     transition: all 0.3s ease;
   }
   
-  .blue-border-card:hover {
-    border-left-color: #1D4ED8;
+  .orange-border-card:hover {
+    border-left-color: #E67E00;
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+    box-shadow: 0 20px 40px rgba(255, 140, 0, 0.15);
   }
   
   .btn-slide {
@@ -188,7 +188,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #1D4ED8;
+    background: #E67E00;
     transition: left 0.3s ease;
     z-index: -1;
   }
@@ -197,15 +197,15 @@
     left: 0;
   }
   
-  .text-gradient-blue {
-    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+  .text-gradient-orange {
+    background: linear-gradient(135deg, #FF8C00 0%, #FFB84D 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
-  .bg-isens-blue {
-    background-color: #2563EB;
+  .bg-isens-orange {
+    background-color: #FF8C00;
   }
   
   .bg-isens-navy {

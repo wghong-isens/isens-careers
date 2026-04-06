@@ -14,14 +14,14 @@ const competencies = [
     title: "문제 정의 역량",
     en: "Problem Definer",
     desc: "AI에게 무엇을 시킬지 결정하는 '질문의 힘'. 핵심 문제를 정확히 정의하고 AI를 도구로 활용합니다.",
-    color: "#2563EB",
+    color: "#FF8C00",
   },
   {
     icon: Cpu,
     title: "기술 융합 역량",
     en: "AI Orchestrator",
     desc: "다양한 AI 도구를 업무에 즉시 도입하고, 기술과 비즈니스를 연결하는 능력입니다.",
-    color: "#1D4ED8",
+    color: "#E67E00",
   },
   {
     icon: CheckCircle,
@@ -63,7 +63,7 @@ export default function TalentSection() {
             className="text-[#6B7280] text-lg max-w-2xl mx-auto"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
           >
-            AI 시대의 새로운 인재상 — <strong className="text-[#2563EB]">AI 오케스트레이터</strong>
+            AI 시대의 새로운 인재상 — <strong className="text-[#FF8C00]">AI 오케스트레이터</strong>
           </p>
         </div>
 
@@ -123,7 +123,7 @@ function CompetencyCard({
   return (
     <div
       ref={ref}
-      className={`flex gap-5 p-5 rounded-xl border border-gray-100 hover:border-[#2563EB]/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${
+      className={`flex gap-5 p-5 rounded-xl border border-gray-100 hover:border-[#FF8C00]/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 ${
         visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
       }`}
       style={{ transitionDelay: `${index * 0.15}s` }}
@@ -169,7 +169,7 @@ function EvaluationCriteria() {
       }`}
     >
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-1 h-6 bg-[#2563EB] rounded-full" />
+        <div className="w-1 h-6 bg-[#FF8C00] rounded-full" />
         <h3
           className="text-xl font-bold text-[#1E293B]"
           style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -183,7 +183,7 @@ function EvaluationCriteria() {
             key={crit.tag}
             className="bg-white rounded-xl p-4 border border-gray-100 flex gap-4 items-start"
           >
-            <div className="bg-[#2563EB] text-white text-xs font-bold px-2.5 py-1 rounded flex-shrink-0"
+            <div className="bg-[#FF8C00] text-white text-xs font-bold px-2.5 py-1 rounded flex-shrink-0"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               {crit.tag}

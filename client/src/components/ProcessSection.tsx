@@ -63,7 +63,7 @@ export default function ProcessSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="section-label text-[#93C5FD]">Hiring Process</span>
+          <span className="section-label text-[#FFD699]">Hiring Process</span>
           <h2
             className="text-4xl lg:text-5xl font-black text-white mt-3 mb-4"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -128,14 +128,14 @@ function StepCard({
     >
       {/* Step number + Icon */}
       <div className="relative mb-5">
-        <div className="w-20 h-20 bg-[#2563EB] rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30">
+        <div className="w-20 h-20 bg-[#FF8C00] rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30">
           <Icon size={28} className="text-white" />
         </div>
         <div
           className="absolute -top-2 -right-2 w-7 h-7 bg-white rounded-full flex items-center justify-center"
         >
           <span
-            className="text-[#2563EB] text-xs font-black"
+            className="text-[#FF8C00] text-xs font-black"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
           >
             {step.step}
@@ -145,7 +145,7 @@ function StepCard({
 
       {/* Content */}
       <div
-        className="text-[10px] font-bold text-[#3B82F6] tracking-widest uppercase mb-2"
+        className="text-[10px] font-bold text-[#FFB84D] tracking-widest uppercase mb-2"
         style={{ fontFamily: "'DM Sans', sans-serif" }}
       >
         {step.en}

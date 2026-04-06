@@ -16,14 +16,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-[#2563EB] rounded flex items-center justify-center">
+              <div className="w-8 h-8 bg-[#FF8C00] rounded flex items-center justify-center">
                 <span className="text-white font-black text-sm" style={{ fontFamily: "'DM Sans', sans-serif" }}>i</span>
               </div>
               <div>
                 <div className="font-black text-sm" style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>
                   아이센스에프앤비
                 </div>
-                <div className="text-[10px] text-[#3B82F6] tracking-widest uppercase" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                <div className="text-[10px] text-[#FFB84D] tracking-widest uppercase" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                   i-Sens F&B
                 </div>
               </div>
@@ -41,7 +41,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4
-              className="text-xs font-bold text-[#3B82F6] tracking-widest uppercase mb-4"
+              className="text-xs font-bold text-[#FFB84D] tracking-widest uppercase mb-4"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               Quick Links
@@ -70,7 +70,7 @@ export default function Footer() {
           {/* Contact & CTA */}
           <div>
             <h4
-              className="text-xs font-bold text-[#3B82F6] tracking-widest uppercase mb-4"
+              className="text-xs font-bold text-[#FFB84D] tracking-widest uppercase mb-4"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               채용 문의
@@ -85,7 +85,7 @@ export default function Footer() {
             </p>
             <button
               onClick={() => toast.info("채용 문의 페이지는 준비 중입니다.")}
-              className="bg-[#2563EB] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#1D4ED8] transition-colors"
+              className="bg-[#FF8C00] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               채용 문의하기

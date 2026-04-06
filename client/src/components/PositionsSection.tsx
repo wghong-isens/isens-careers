@@ -84,13 +84,13 @@ const positions = [
 ];
 
 const deptColors: Record<string, string> = {
-  "가맹부": "#2563EB",
+  "가맹부": "#FF8C00",
   "디자인부": "#7C3AED",
   "영업부": "#059669",
   "전략마케팅부": "#D97706",
   "IT개발부": "#DC2626",
   "전략기획실": "#0891B2",
-  "인사총무부": "#2563EB",
+  "인사총무부": "#FF8C00",
   "재경법무부": "#374151",
   "인테리어부": "#B45309",
 };
@@ -136,8 +136,8 @@ export default function PositionsSection() {
               onClick={() => setFilter(dept)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 filter === dept
-                  ? "bg-[#2563EB] text-white shadow-md shadow-blue-500/20"
-                  : "bg-white text-[#374151] border border-gray-200 hover:border-[#2563EB] hover:text-[#2563EB]"
+                  ? "bg-[#FF8C00] text-white shadow-md shadow-blue-500/20"
+                  : "bg-white text-[#374151] border border-gray-200 hover:border-[#FF8C00] hover:text-[#FF8C00]"
               }`}
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
@@ -165,7 +165,7 @@ function PositionCard({
   index: number;
 }) {
   const { ref, visible } = useScrollFadeIn();
-  const color = deptColors[pos.dept] || "#2563EB";
+  const color = deptColors[pos.dept] || "#FF8C00";
 
   return (
     <div
