@@ -7,7 +7,7 @@
 import { useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-jsN96QKewwU9MXH68noEwe.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/hero-bg-warm-BkxTAWq9Vf7YxSVMxnwAFZ.webp";
 
 export default function HeroSection() {
   const titleRef = useRef<HTMLDivElement>(null);
@@ -32,10 +32,10 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#1E293B]/80 to-[#1E293B]/60" />
-      {/* Blue accent overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0F172A]/40" />
+      {/* Warm orange overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FF8C00]/40 via-[#FFB84D]/30 to-transparent" />
+      {/* Light gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/10" />
 
       {/* Diagonal bottom cut */}
       <div
@@ -75,12 +75,12 @@ export default function HeroSection() {
             style={{ transitionDelay: "0.2s" }}
           >
             <h1
-              className="text-5xl lg:text-7xl font-black text-white leading-[1.05] mb-6"
+              className="text-5xl lg:text-7xl font-black text-[#1E293B] leading-[1.05] mb-6"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               AI 시대를 이끌
               <br />
-              <span className="text-[#FFB84D]">인재</span>를 찾습니다
+              <span className="text-[#FF8C00]">인재</span>를 찾습니다
             </h1>
           </div>
 
@@ -98,7 +98,7 @@ export default function HeroSection() {
             }}
           >
             <p
-              className="text-lg lg:text-xl text-white/80 mb-4 leading-relaxed"
+              className="text-lg lg:text-xl text-[#374151] mb-4 leading-relaxed"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
             >
               홍익인간(弘益人間)의 정신으로
@@ -106,7 +106,7 @@ export default function HeroSection() {
               대한민국 1등 가맹관리 회사를 함께 만들어 갑니다.
             </p>
             <p
-              className="text-base text-white/60"
+              className="text-base text-[#6B7280]"
               style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 300 }}
             >
               (주)아이센스에프앤비 — 직원의 성공과 행복을 실현하는 최고의 플랫폼
@@ -135,7 +135,7 @@ export default function HeroSection() {
             </button>
             <button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-2 border-white/40 text-white px-8 py-4 rounded font-semibold text-base hover:border-white hover:bg-white/10 transition-all"
+              className="border-2 border-[#FF8C00] text-[#FF8C00] px-8 py-4 rounded font-semibold text-base hover:bg-[#FF8C00] hover:text-white transition-all"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               회사 소개
@@ -144,7 +144,7 @@ export default function HeroSection() {
 
           {/* Stats */}
           <div
-            className="flex flex-wrap gap-8 mt-16 pt-8 border-t border-white/20 opacity-0 translate-y-8 transition-all duration-700"
+            className="flex flex-wrap gap-8 mt-16 pt-8 border-t border-[#FFB84D]/30 opacity-0 translate-y-8 transition-all duration-700"
             style={{ transitionDelay: "0.8s" }}
             ref={(el) => {
               if (el) {
@@ -162,13 +162,13 @@ export default function HeroSection() {
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">
                 <span
-                  className="text-3xl font-black text-white"
+                  className="text-3xl font-black text-[#FF8C00]"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   {stat.num}
                 </span>
                 <span
-                  className="text-sm text-white/60 mt-1"
+                  className="text-sm text-[#6B7280] mt-1"
                   style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
                 >
                   {stat.label}
@@ -182,7 +182,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-white/60 hover:text-white transition-colors animate-bounce"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 text-[#FF8C00]/60 hover:text-[#FF8C00] transition-colors animate-bounce"
       >
         <ChevronDown size={28} />
       </button>

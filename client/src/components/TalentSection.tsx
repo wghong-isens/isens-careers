@@ -43,7 +43,7 @@ export default function TalentSection() {
   const { ref, visible } = useScrollFadeIn();
 
   return (
-    <section id="talent" className="py-24 bg-white">
+    <section id="talent" className="py-24 bg-gradient-to-b from-[#FFF9F0] to-white">
       <div className="container">
         {/* Header */}
         <div
@@ -52,7 +52,7 @@ export default function TalentSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="section-label">Talent Profile</span>
+          <span className="section-label text-[#FF8C00]">Talent Profile</span>
           <h2
             className="text-4xl lg:text-5xl font-black text-[#1E293B] mt-3 mb-4"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -77,7 +77,7 @@ export default function TalentSection() {
                 alt="AI 시대 인재"
                 className="w-full h-[400px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/60 to-transparent rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#FF8C00]/40 to-transparent rounded-2xl" />
               <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
                 <p
                   className="text-white font-bold text-base"

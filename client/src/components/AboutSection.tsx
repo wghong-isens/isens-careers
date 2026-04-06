@@ -5,13 +5,13 @@
  */
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
-const CULTURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/culture-img-We2iyVk4SdeYarcWYUL53c.webp";
+const CULTURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/culture-bg-warm-A7xutKLWsFY7cCerA2Pmfm.webp";
 
 export default function AboutSection() {
   const { ref: sectionRef, visible } = useScrollFadeIn();
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-gradient-to-b from-white to-[#FFF9F0]">
       <div className="container">
         <div
           ref={sectionRef}
@@ -48,7 +48,7 @@ export default function AboutSection() {
 
             {/* Mission & Vision Cards */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-[#EFF6FF] rounded-lg p-5 border-l-4 border-[#FF8C00]">
+              <div className="bg-[#FFF5E6] rounded-lg p-5 border-l-4 border-[#FF8C00]">
                 <div
                   className="text-xs font-bold text-[#FF8C00] tracking-widest uppercase mb-2"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
@@ -63,7 +63,7 @@ export default function AboutSection() {
                   이롭게 한다
                 </p>
               </div>
-              <div className="bg-[#1E293B] rounded-lg p-5 border-l-4 border-[#FFB84D]">
+              <div className="bg-[#FF8C00] rounded-lg p-5 border-l-4 border-[#FF8C00]">
                 <div
                   className="text-xs font-bold text-[#FFB84D] tracking-widest uppercase mb-2"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
@@ -74,8 +74,8 @@ export default function AboutSection() {
                   className="text-sm font-semibold text-white leading-snug"
                   style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
                 >
-                  대한민국 1등
-                  가맹관리 회사
+                  타의 추종을 불허할
+                  1등 회사
                 </p>
               </div>
             </div>
@@ -89,8 +89,8 @@ export default function AboutSection() {
                 alt="아이센스에프앤비 팀 문화"
                 className="w-full h-[420px] object-cover"
               />
-              {/* Blue overlay accent */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1E293B]/50 to-transparent" />
+              {/* Warm overlay accent */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#FF8C00]/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p
                   className="text-white font-semibold text-base"

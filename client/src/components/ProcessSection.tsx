@@ -47,7 +47,7 @@ export default function ProcessSection() {
   return (
     <section
       id="process"
-      className="py-24 bg-[#1E293B] relative"
+      className="py-24 bg-gradient-to-b from-[#FFF9F0] to-[#FFE8D1] relative"
       style={{
         clipPath: "polygon(0 4%, 100% 0, 100% 96%, 0 100%)",
         marginTop: "-3rem",
@@ -63,15 +63,15 @@ export default function ProcessSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="section-label text-[#FFD699]">Hiring Process</span>
+          <span className="section-label text-[#FF8C00]">Hiring Process</span>
           <h2
-            className="text-4xl lg:text-5xl font-black text-white mt-3 mb-4"
+            className="text-4xl lg:text-5xl font-black text-[#1E293B] mt-3 mb-4"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
           >
             채용 프로세스
           </h2>
           <p
-            className="text-[#94A3B8] text-lg max-w-2xl mx-auto"
+            className="text-[#6B7280] text-lg max-w-2xl mx-auto"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
           >
             AI 시대에 맞는 공정하고 투명한 채용 과정을 안내합니다.
@@ -81,7 +81,7 @@ export default function ProcessSection() {
         {/* Steps */}
         <div className="relative">
           {/* Connecting line (desktop) */}
-          <div className="hidden lg:block absolute top-12 left-0 right-0 h-px bg-white/10 z-0" />
+          <div className="hidden lg:block absolute top-12 left-0 right-0 h-px bg-[#FFB84D]/30 z-0" />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {steps.map((step, i) => (
@@ -92,15 +92,15 @@ export default function ProcessSection() {
 
         {/* Bottom Note */}
         <div
-          className="mt-12 bg-white/5 border border-white/10 rounded-xl p-6 text-center"
+          className="mt-12 bg-[#FF8C00]/10 border border-[#FFB84D]/30 rounded-xl p-6 text-center"
         >
           <p
-            className="text-[#94A3B8] text-sm leading-relaxed"
+            className="text-[#374151] text-sm leading-relaxed"
             style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
           >
-            모든 전형은 <strong className="text-white">AI 활용을 권장</strong>합니다.
+            모든 전형은 <strong className="text-[#FF8C00]">AI 활용을 권장</strong>합니다.
             AI를 잘 쓰는 사람이 우리가 찾는 인재입니다.
-            전형 결과는 각 단계 완료 후 <strong className="text-white">1주일 이내</strong>에 개별 통보됩니다.
+            전형 결과는 각 단계 완료 후 <strong className="text-[#FF8C00]">1주일 이내</strong>에 개별 통보된니다.
           </p>
         </div>
       </div>
@@ -157,13 +157,13 @@ function StepCard({
         {step.title}
       </h3>
       <p
-        className="text-sm text-[#94A3B8] leading-relaxed mb-3"
+        className="text-sm text-[#6B7280] leading-relaxed mb-3"
         style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400 }}
       >
         {step.desc}
       </p>
       <span
-        className="text-xs bg-white/10 text-white/70 px-3 py-1 rounded-full"
+        className="text-xs bg-[#FFE8D1] text-[#FF8C00] px-3 py-1 rounded-full"
         style={{ fontFamily: "'DM Sans', sans-serif" }}
       >
         {step.duration}

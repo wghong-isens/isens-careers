@@ -79,7 +79,7 @@ export default function BenefitsSection() {
   const { ref, visible } = useScrollFadeIn();
 
   return (
-    <section id="benefits" className="py-24 bg-white">
+    <section id="benefits" className="py-24 bg-gradient-to-b from-white via-[#FFFAF5] to-[#FFF9F0]">
       <div className="container">
         {/* Header */}
         <div
@@ -88,7 +88,7 @@ export default function BenefitsSection() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <span className="section-label">Benefits & Growth</span>
+          <span className="section-label text-[#FF8C00]">Benefits & Growth</span>
           <h2
             className="text-4xl lg:text-5xl font-black text-[#1E293B] mt-3 mb-4"
             style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
