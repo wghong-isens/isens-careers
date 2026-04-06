@@ -48,7 +48,7 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           {/* Label */}
           <div
-            className="inline-flex items-center gap-2 mb-6 opacity-0 translate-y-8 transition-all duration-700"
+            className="inline-flex items-center gap-3 mb-8 opacity-0 translate-y-8 transition-all duration-700"
             style={{ transitionDelay: "0.1s" }}
             ref={(el) => {
               if (el) {
@@ -59,10 +59,10 @@ export default function HeroSection() {
               }
             }}
           >
-            <div className="w-12 h-1 bg-[#FFB84D]" />
+            <div className="w-16 h-1.5 bg-[#FFB84D]" />
             <span
-              className="text-white text-sm font-bold tracking-[0.2em] uppercase drop-shadow-md"
-              style={{ fontFamily: "'DM Sans', sans-serif", textShadow: "0 2px 6px rgba(0,0,0,0.4)" }}
+              className="text-white text-lg font-bold tracking-[0.3em] uppercase drop-shadow-md"
+              style={{ fontFamily: "'DM Sans', sans-serif", textShadow: "0 3px 8px rgba(0,0,0,0.5)" }}
             >
               i-Sens F&B Careers
             </span>
@@ -75,8 +75,8 @@ export default function HeroSection() {
             style={{ transitionDelay: "0.2s" }}
           >
             <h1
-              className="text-5xl lg:text-7xl font-black text-white leading-[1.05] mb-6 drop-shadow-lg"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", textShadow: "0 4px 12px rgba(0,0,0,0.5)" }}
+              className="text-6xl lg:text-8xl font-black text-white leading-[1.1] mb-8 drop-shadow-lg"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", textShadow: "0 6px 16px rgba(0,0,0,0.6)" }}
             >
               AI 시대를 이끌
               <br />
@@ -98,24 +98,24 @@ export default function HeroSection() {
             }}
           >
             <p
-              className="text-lg lg:text-xl text-white mb-4 leading-relaxed drop-shadow-md"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400, textShadow: "0 2px 8px rgba(0,0,0,0.4)" }}
+              className="text-2xl lg:text-3xl text-white mb-4 leading-relaxed drop-shadow-md font-semibold"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 500, textShadow: "0 3px 10px rgba(0,0,0,0.5)" }}
             >
-              홍익인간(弘益人間)의 정신으로
+              홍ik인간(弘益人間)의 정신으로
               <br />
-              대한민국 1등 가맹관리 회사를 함께 만들어 갑니다.
+              대한민국 1등 가맩관리 회사를 함께 만들어 갑니다.
             </p>
             <p
-              className="text-base text-white/90 drop-shadow-md"
-              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 300, textShadow: "0 2px 6px rgba(0,0,0,0.4)" }}
+              className="text-xl text-white/90 drop-shadow-md font-medium"
+              style={{ fontFamily: "'Noto Sans KR', sans-serif", fontWeight: 400, textShadow: "0 3px 8px rgba(0,0,0,0.5)" }}
             >
-              (주)아이센스에프앤비 — 직원의 성공과 행복을 실현하는 최고의 플랫폼
+              (주)아이센스에단비 — 직원의 성공과 행복을 실현하는 최고의 플래폰
             </p>
           </div>
 
           {/* CTA Buttons */}
           <div
-            className="flex flex-wrap gap-4 mt-10 opacity-0 translate-y-8 transition-all duration-700"
+            className="flex flex-wrap gap-5 mt-12 opacity-0 translate-y-8 transition-all duration-700"
             style={{ transitionDelay: "0.6s" }}
             ref={(el) => {
               if (el) {
@@ -130,7 +130,7 @@ export default function HeroSection() {
               href="https://isens.career.greetinghr.com/ko/intro"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#FF8C00] text-white px-8 py-4 rounded font-bold text-base hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/30"
+              className="inline-block bg-[#FF8C00] text-white px-10 py-5 rounded font-bold text-lg hover:bg-[#E67E00] transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/30"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               지원하기
@@ -139,14 +139,14 @@ export default function HeroSection() {
               href="https://isens.career.greetinghr.com/ko/intro"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block border-2 border-white text-white px-8 py-4 rounded font-semibold text-base hover:bg-white hover:text-[#FF8C00] transition-all"
+              className="inline-block border-2 border-white text-white px-10 py-5 rounded font-semibold text-lg hover:bg-white hover:text-[#FF8C00] transition-all"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
-              채용 포지션 보기
+              채용 포지셔 보기
             </a>
             <button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-2 border-[#FF8C00] text-[#FF8C00] px-8 py-4 rounded font-semibold text-base hover:bg-[#FF8C00] hover:text-white transition-all"
+              className="border-2 border-[#FF8C00] text-[#FF8C00] px-10 py-5 rounded font-semibold text-lg hover:bg-[#FF8C00] hover:text-white transition-all"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               회사 소개
@@ -169,17 +169,17 @@ export default function HeroSection() {
             {[
               { num: "9+", label: "채용 부서" },
               { num: "AI", label: "전사 도입" },
-              { num: "1등", label: "가맹관리 목표" },
+              { num: "1등", label: "가맩관리 목표" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">
                 <span
-                  className="text-3xl font-black text-[#FF8C00]"
+                  className="text-5xl lg:text-6xl font-black text-[#FF8C00]"
                   style={{ fontFamily: "'DM Sans', sans-serif" }}
                 >
                   {stat.num}
                 </span>
                 <span
-                  className="text-sm text-[#6B7280] mt-1"
+                  className="text-lg text-white/80 mt-2 font-semibold"
                   style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
                 >
                   {stat.label}

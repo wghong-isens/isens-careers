@@ -43,7 +43,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-28">
           {/* Logo */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -52,7 +52,7 @@ export default function Navbar() {
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/로고_9f3d91e7.png"
               alt="아이센스 로고"
-              className="h-14 lg:h-16 w-auto"
+              className="h-16 lg:h-24 w-auto"
             />
           </button>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollTo(link.id)}
-                className={`text-sm font-medium transition-colors hover:text-[#FF8C00] ${
+                className={`text-base font-semibold transition-colors hover:text-[#FF8C00] ${
                   scrolled ? "text-[#374151]" : "text-white/90"
                 }`}
                 style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
@@ -76,7 +76,7 @@ export default function Navbar() {
           <div className="hidden lg:block">
             <button
               onClick={() => scrollTo("positions")}
-              className="bg-[#FF8C00] text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
+              className="bg-[#FF8C00] text-white px-7 py-3 rounded text-base font-bold hover:bg-[#E67E00] transition-colors"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               지금 지원하기
