@@ -5,7 +5,7 @@
  */
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
-const CULTURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/about-company-image-eEu8TVzYG4pRpX943ho7C8.webp";
+const CULTURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663519019650/XTWW3t4ncyzgFM64yU5wmZ/about-team-collaboration-eDioufB2oAGr68phDd8uYW.webp";
 
 export default function AboutSection() {
   const { ref: sectionRef, visible } = useScrollFadeIn();
@@ -226,35 +226,40 @@ export default function AboutSection() {
 
           {/* 우측: 이미지 */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#FF8C00]/20 hover:shadow-3xl transition-all duration-500">
               <img
                 src={CULTURE_IMG}
                 alt="아이센스에프앤비 팀 문화"
-                className="w-full h-[450px] object-cover"
+                className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-500"
               />
-              {/* 따뜻한 오버레이 */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#FF8C00]/50 via-transparent to-transparent" />
+              {/* 부드러운 오버레이 */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               
-              {/* 하단 정보 박스 */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 lg:p-8">
-                <p
-                  className="text-white font-bold text-lg"
-                  style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
-                >
-                  함께 성장하는 문화
-                </p>
-                <p
-                  className="text-white/80 text-sm mt-2"
-                  style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
-                >
-                  협업과 학습이 일상이 되는 공간에서 모든 직원이 최고의 성과를 만들어냅니다.
-                </p>
+              {/* 하단 정보 박스 - 개선된 디자인 */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-8 lg:p-10">
+                <div className="flex items-start gap-4">
+                  <div className="w-1 h-12 bg-[#FF8C00] rounded-full flex-shrink-0" />
+                  <div>
+                    <p
+                      className="text-white font-black text-xl lg:text-2xl leading-tight"
+                      style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
+                    >
+                      함께 성장하는 문화
+                    </p>
+                    <p
+                      className="text-white/80 text-sm lg:text-base mt-3 leading-relaxed"
+                      style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
+                    >
+                      협업과 학습이 일상이 되는 공간에서 모든 직원이 최고의 성과를 만들어냅니다.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* 장식 요소 */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#FF8C00]/5 rounded-full blur-3xl" />
-            <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-[#FFB84D]/5 rounded-full blur-3xl" />
+            {/* 장식 요소 - 더 눈에 띄게 */}
+            <div className="absolute -top-8 -right-8 w-40 h-40 bg-[#FF8C00]/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-[#FFB84D]/10 rounded-full blur-3xl" />
           </div>
         </div>
 
