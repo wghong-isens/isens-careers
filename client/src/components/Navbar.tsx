@@ -74,13 +74,15 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <button
-              onClick={() => scrollTo("positions")}
-              className="bg-[#FF8C00] text-white px-7 py-3 rounded text-base font-bold hover:bg-[#E67E00] transition-colors"
+            <a
+              href="https://isens.career.greetinghr.com/ko/intro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#FF8C00] text-white px-7 py-3 rounded text-base font-bold hover:bg-[#E67E00] transition-colors"
               style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
             >
               지금 지원하기
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -110,13 +112,15 @@ export default function Navbar() {
               </button>
             ))}
             <div className="pt-2 px-4">
-              <button
-                onClick={() => scrollTo("positions")}
-                className="w-full bg-[#FF8C00] text-white px-5 py-3 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
+              <a
+                href="https://isens.career.greetinghr.com/ko/intro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center bg-[#FF8C00] text-white px-5 py-3 rounded text-sm font-semibold hover:bg-[#E67E00] transition-colors"
                 style={{ fontFamily: "'Noto Sans KR', sans-serif" }}
               >
                 지금 지원하기
-              </button>
+              </a>
             </div>
           </div>
         </div>
